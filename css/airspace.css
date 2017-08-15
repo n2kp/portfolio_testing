@@ -1,15 +1,7 @@
-/*
- * This is the main css file that ships with the airspace theme.
- * In airspace, it is called style.css
- * However, style.css now holds additional styles for this jekyll port. (Not written by ThemeFisher)
- * The original style.css is now called airspace.css
- * 
- */
-
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(//fonts.googleapis.com/css?family=Volkhov:400italic);
-/* var text-decoration */
+
 /*--
 	Common Css
 --*/
@@ -55,6 +47,7 @@ a:active {
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 600;
+  /*text-align: center;*/
 }
 .section-title p {
   font-family: 'Volkhov', serif;
@@ -127,13 +120,13 @@ font header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 10px;
   padding-bottom: 45px;
 }
-#slider .block p {
+/*#slider .block p {
   font-size: 23px;
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
-}
+}*/
 /*--
 	wrapper Start
 --*/
@@ -170,21 +163,52 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 30px;
 }
 #service .service-item i {
-  font-size: 60px;
+  font-size: 80px;
   color: #4A4656;
 }
 #service .service-item h4 {
-  padding-top: 20px;
+  padding-top: 0px;
   margin: 0;
   color: #666;
 }
-#service .service-item p {
-  color: #888;
-  padding-top: 10px;
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.8;
+
+#service .service-item:hover i.icon-ruby {
+  color: #D73A2E;
 }
+#service .service-item:hover i.icon-javascript-alt {
+  color: #F7DF1E;
+}
+#service .service-item:hover i.icon-nodejs {
+  color: #8CC84B;
+}
+#service .service-item:hover i.icon-sass {
+  color: #CD669A;
+}
+#service .service-item:hover i.icon-html5 {
+  color: #F16529;
+}
+#service .service-item:hover i.icon-css3 {
+  color: #3C9CD7;
+}
+#service .service-item:hover i.icon-ruby-on-rails {
+  color: #D73A2E;
+}
+#service .service-item:hover i.icon-jquery {
+  color: #0868AB;
+}
+#service .service-item:hover i.icon-angular {
+  color: #AF2B2D;
+}
+#service .service-item:hover i.icon-postgres {
+  color: #326690;
+}
+#service .service-item:hover i.icon-mongodb {
+  color: #69B23F;
+}
+#service .service-item:hover i.icon-bootstrap {
+  color: #563D7C;
+}
+
 /*--
 	call-to-action Start
 --*/
@@ -804,4 +828,66 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+/*---------------------------*/
+/*--
+	Project Pages
+--*/
+#project-image .img {
+
+}
+#project-description p {
+
+}
+
+#project-tech {
+  text-align: center;
+  padding: 90px 0;
+}
+#project-tech .tech-item {
+  padding-bottom: 30px;
+}
+#project-tech .tech-item i {
+  font-size: 80px;
+  color: #4A4656;
+}
+#project-tech .tech-item h4 {
+  padding-top: 0px;
+  margin: 0;
+  margin-top: 10px;
+  color: #666;
+}
+
+#project-tech .tech-item:hover i.devicon-github-plain {
+  color: #000000;
+}
+#project-tech .tech-item:hover i.devicon-javascript-plain {
+  color: #F7DF1E;
+}
+#project-tech .tech-item:hover i.devicon-gulp-plain {
+  color: #CF4547;
+}
+#project-tech .tech-item:hover i.devicon-sass-original {
+  color: #CD669A;
+}
+#project-tech .tech-item:hover i.devicon-html5-plain {
+  color: #F16529;
+}
+#project-tech .tech-item:hover i.devicon-css3-plain {
+  color: #3C9CD7;
+}
+#project-tech .tech-item:hover i.icon-ruby-on-rails {
+  color: #D73A2E;
+}
+#project-tech .tech-item:hover i.devicon-jquery-plain {
+  color: #0868AB;
+}
+#project-tech .tech-item:hover i.icon-postgres {
+  color: #326690;
+}
+#project-tech .tech-item:hover i.icon-mongodb {
+  color: #69B23F;
+}
+#project-tech .tech-item:hover i.icon-bootstrap {
+  color: #563D7C;
 }
