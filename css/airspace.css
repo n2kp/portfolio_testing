@@ -73,12 +73,13 @@ header .navbar-default {
   border: 0px;
 }
 header .navbar-default .navbar-nav {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 header .navbar-default .navbar-nav li a {
-  color: #333333;
+  color: #215479;
   padding: 10px 26px;
   font-size: 15px;
+  font-weight: bold;
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
@@ -171,44 +172,60 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0;
   color: #666;
 }
-
-#service .service-item:hover i.icon-ruby {
-  color: #D73A2E;
+#service .service-item:hover i.devicon-github-plain {
+  color: #000000;
 }
-#service .service-item:hover i.icon-javascript-alt {
+#service .service-item:hover i.devicon-javascript-plain {
   color: #F7DF1E;
 }
-#service .service-item:hover i.icon-nodejs {
-  color: #8CC84B;
-}
-#service .service-item:hover i.icon-sass {
+#service .service-item:hover i.devicon-sass-original {
   color: #CD669A;
 }
-#service .service-item:hover i.icon-html5 {
+#service .service-item:hover i.devicon-html5-plain {
   color: #F16529;
 }
-#service .service-item:hover i.icon-css3 {
+#service .service-item:hover i.devicon-css3-plain {
   color: #3C9CD7;
 }
-#service .service-item:hover i.icon-ruby-on-rails {
-  color: #D73A2E;
-}
-#service .service-item:hover i.icon-jquery {
+#service .service-item:hover i.devicon-jquery-plain {
   color: #0868AB;
 }
-#service .service-item:hover i.icon-angular {
+#service .service-item:hover i.devicon-angularjs-plain {
   color: #AF2B2D;
 }
-#service .service-item:hover i.icon-postgres {
+#service .service-item:hover i.devicon-ruby-plain {
+  color: #D73A2E;
+}
+#service .service-item:hover i.devicon-rails-plain {
+  color: #D73A2E;
+}
+#service .service-item:hover i.devicon-postgresql-plain {
   color: #326690;
 }
-#service .service-item:hover i.icon-mongodb {
-  color: #69B23F;
-}
-#service .service-item:hover i.icon-bootstrap {
+#service .service-item:hover i.devicon-bootstrap-plain {
   color: #563D7C;
 }
-
+#service .service-item:hover i.devicon-git-plain {
+  color: #F05033;
+}
+#service .service-item:hover i.devicon-amazonwebservices-original {
+  color: #F8981D;
+}
+#service .service-item:hover i.devicon-heroku-original {
+  color: #430099;
+}
+#service .service-item:hover i.devicon-mongodb-plain {
+  color: #69B23F;
+}
+#service .service-item:hover i.devicon-express-original {
+  color: #000000;
+}
+#service .service-item:hover i.devicon-nodejs-plain {
+  color: #8CC84B;
+}
+#service .service-item:hover i.devicon-mocha-plain {
+  color: #8D6748;
+}
 /*--
 	call-to-action Start
 --*/
@@ -255,7 +272,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
-  background: url("../img/featue-bg.jpg");
+  background: url("../img/feature-bg.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
@@ -404,7 +421,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #global-header .block {
   color: #E3E3E4;
   margin: 0 auto;
-  padding-left: 90px;
+  /*padding-left: 90px;*/
   text-align: center;
 }
 #global-header .block h1 {
@@ -492,7 +509,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 #portfolio-work .block .portfolio-contant ul li {
   float: left;
-  width: 32.22%;
+  width: 48%;
   overflow: hidden;
   margin: 6px;
   position: relative;
@@ -516,9 +533,11 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: left;
 }
 #portfolio-work .block .portfolio-contant ul li a p {
   font-size: 15px;
+  text-align: center;
 }
 #portfolio-work .block .portfolio-contant ul li a span {
   font-style: italic;
@@ -528,6 +547,8 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .portfolio-contant ul img {
   width: 100%;
   height: auto;
+  filter:grayscale(25%);
+  border: 1px solid #655E7A;
 }
 #portfolio-work .block .portfolio-contant .overly {
   position: absolute;
@@ -718,6 +739,10 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-right: 15px;
   font-size: 20px;
   width: 20px;
+  color: #2C2C2C;
+}
+.address-block li a {
+  color: #2C2C2C;
 }
 .social-icons {
   margin-top: 40px;
@@ -801,12 +826,13 @@ footer {
   background: #F5F5F5;
   text-align: center;
   padding-top: 48px;
-  padding-bottom: 55px;
+  padding-bottom: 48px;
 }
 footer p {
   font-size: 13px;
   line-height: 25px;
   color: #919191;
+  font-weight: bold;
 }
 footer a {
   color: #595959;
@@ -824,25 +850,44 @@ footer .footer-manu ul li {
 }
 footer .footer-manu ul li a {
   display: inline-block;
-  color: #494949;
+  color: #215479;
+  font-weight: bold;
 }
 footer .footer-manu ul li a:hover {
   color: #000;
 }
+
 /*---------------------------*/
 /*--
 	Project Pages
 --*/
-#project-image .img {
-
+#project-image {
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 20px;
+}
+#project-image img {
+  width: 100%;
+}
+#project-description {
+  padding: 20px 0;
+  text-align: justify;
 }
 #project-description p {
-
+  font-size: 18px;
 }
-
+#project-description a {
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 #project-tech {
   text-align: center;
-  padding: 90px 0;
+  padding: 30px 0;
 }
 #project-tech .tech-item {
   padding-bottom: 30px;
@@ -857,7 +902,6 @@ footer .footer-manu ul li a:hover {
   margin-top: 10px;
   color: #666;
 }
-
 #project-tech .tech-item:hover i.devicon-github-plain {
   color: #000000;
 }
@@ -876,18 +920,42 @@ footer .footer-manu ul li a:hover {
 #project-tech .tech-item:hover i.devicon-css3-plain {
   color: #3C9CD7;
 }
-#project-tech .tech-item:hover i.icon-ruby-on-rails {
-  color: #D73A2E;
-}
 #project-tech .tech-item:hover i.devicon-jquery-plain {
   color: #0868AB;
 }
-#project-tech .tech-item:hover i.icon-postgres {
+#project-tech .tech-item:hover i.devicon-angularjs-plain {
+  color: #AF2B2D;
+}
+#project-tech .tech-item:hover i.devicon-ruby-plain {
+  color: #D73A2E;
+}
+#project-tech .tech-item:hover i.devicon-rails-plain {
+  color: #D73A2E;
+}
+#project-tech .tech-item:hover i.devicon-postgresql-plain {
   color: #326690;
 }
-#project-tech .tech-item:hover i.icon-mongodb {
+#project-tech .tech-item:hover i.devicon-bootstrap-plain {
+  color: #563D7C;
+}
+#project-tech .tech-item:hover i.devicon-git-plain {
+  color: #F05033;
+}
+#project-tech .tech-item:hover i.devicon-amazonwebservices-original {
+  color: #F8981D;
+}
+#project-tech .tech-item:hover i.devicon-heroku-original {
+  color: #430099;
+}
+#project-tech .tech-item:hover i.devicon-mongodb-plain {
   color: #69B23F;
 }
-#project-tech .tech-item:hover i.icon-bootstrap {
-  color: #563D7C;
+#project-tech .tech-item:hover i.devicon-express-original {
+  color: #000000;
+}
+#project-tech .tech-item:hover i.devicon-nodejs-plain {
+  color: #8CC84B;
+}
+#project-tech .tech-item:hover i.devicon-mocha-plain {
+  color: #8D6748;
 }
